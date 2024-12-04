@@ -1,0 +1,4 @@
+Flask==3.1.0 #Framework untuk membuat aplikasi web.
+google-cloud-storage==2.10.0  #Library untuk mengelola objek dan bucket di Google Cloud Storage.
+gunicorn==21.0.1 ## Web server yang dapat digunakan untuk menjalankan aplikasi Flask di production.
+
