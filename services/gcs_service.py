@@ -4,8 +4,8 @@ from config import Config
 def upload_audio_file(file, filename):
     try:
         # Inisialisasi client GCS dengan kredensial yang benar dari Config
-        credentials = Config.get_google_credentials()  # Dapatkan kredensial dari Config
-        client = storage.Client.from_service_account_info(credentials)  # Menggunakan kredensial
+        # credentials = Config.get_google_credentials()  # Dapatkan kredensial dari Config
+        client = storage.Client()
         
         # Dapatkan bucket dari config
         bucket = client.get_bucket(Config.GCS_BUCKET_NAME)
