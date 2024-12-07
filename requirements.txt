@@ -3,4 +3,4 @@ python-dotenv
 google-cloud-storage
 tensorflow
 openai
-pydub
+mutagen
