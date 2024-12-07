@@ -5,7 +5,7 @@ from openai import OpenAI
 from utils.audio_extract import get_audio_duration
 
 # Inisialisasi OpenAI client
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 TEMP_AUDIO_FOLDER = "temp-audio"
 
