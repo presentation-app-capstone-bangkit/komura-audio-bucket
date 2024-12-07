@@ -1,10 +1,11 @@
 import requests
+from config import Config
 
 def save_recording_to_firestore(user_id, recordingTitle, audio_url, transcribe, fillers_count, duration, word_count, wpm, pace, confidence, confidentLabel):
     """
     Mengirim data hasil transkripsi ke Firestore melalui API lokal.
     """
-    api_url = "http://127.0.0.1:8080/save-recording"
+    api_url = Config.API_URL + "/save-recording"
 
     # Payload untuk dikirim ke Firestore
     payload = {

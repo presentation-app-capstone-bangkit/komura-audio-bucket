@@ -26,6 +26,9 @@ class Config:
     
     # Ekstensi file yang diperbolehkan
     ALLOWED_EXTENSIONS = set(os.getenv("ALLOWED_EXTENSIONS", "mp3,wav").split(','))
+
+    # API URL
+    API_URL = os.getenv("API_URL", "http://localhost:8080")
     
     @classmethod
     def get_google_credentials(cls):
